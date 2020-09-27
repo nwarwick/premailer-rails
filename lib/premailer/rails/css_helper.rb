@@ -55,6 +55,8 @@ class Premailer
         case key
         when :filesystem
           CSSLoaders::FileSystemLoader
+        when :webpacker
+          CSSLoaders::WebpackLoader
         when :asset_pipeline
           CSSLoaders::AssetPipelineLoader
         when :network
